@@ -90,7 +90,7 @@ module Azure
     def upload_chunks(container, blob, content_or_filepath, options = {})
       counter = 1
       futures = []
-      pool    = BlockActor.pool(size: 10, args: [self, container, blob, options])
+      pool    = BlockActor.pool(size: 2, args: [self, container, blob, options])
 
       if (content_or_filepath =~ /\x00/)
         # contains null characters - has to be content, avoid File.file check that will fail
