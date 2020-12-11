@@ -21,14 +21,14 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<bundler>, ["~> 1.5"])
+      s.add_development_dependency(%q<bundler>, ["~> 2.1.2"])
       s.add_development_dependency(%q<rake>, [">= 0"])
       s.add_runtime_dependency(%q<azure>, [">= 0"])
       s.add_runtime_dependency(%q<hashie>, [">= 0"])
       s.add_runtime_dependency(%q<addressable>, [">= 0"])
       s.add_runtime_dependency(%q<celluloid>, [">= 0"])
     else
-      s.add_dependency(%q<bundler>, ["~> 1.5"])
+      s.add_dependency(%q<bundler>, ["~> 2.1.2"])
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<azure>, [">= 0"])
       s.add_dependency(%q<hashie>, [">= 0"])
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<celluloid>, [">= 0"])
     end
   else
-    s.add_dependency(%q<bundler>, ["~> 1.5"])
+    s.add_dependency(%q<bundler>, ["~> 2.1.2"])
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<azure>, [">= 0"])
     s.add_dependency(%q<hashie>, [">= 0"])
